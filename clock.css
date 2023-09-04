@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #333;
+}
+
+.clock {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: #fff;
+    border: 20px solid darkslategray;
+    position: relative;
+    box-shadow: 0 0 30px 0 #000;
+}
+
+.indicators div {
+    position: absolute;
+    inset: 10px;
+    text-align: center;
+}
+
+.indicators div:after {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 140%;
+    display: block;
+}
+
+.indicators div:nth-child(2) {
+    transform: rotate(30deg);
+}
+
+.indicators div:nth-child(3) {
+    transform: rotate(60deg);
+}
+
+.indicators div:nth-child(4) {
+    transform: rotate(90deg);
+}
+
+.indicators div:nth-child(5) {
+    transform: rotate(120deg);
+}
+
+.indicators div:nth-child(6) {
+    transform: rotate(150deg);
+}
+
+.indicators div:nth-child(7) {
+    transform: rotate(180deg);
+}
+
+.indicators div:nth-child(8) {
+    transform: rotate(210deg);
+}
+
+.indicators div:nth-child(9) {
+    transform: rotate(240deg);
+}
+
+.indicators div:nth-child(10) {
+    transform: rotate(270deg);
+}
+
+.indicators div:nth-child(11) {
+    transform: rotate(300deg);
+}
+
+.indicators div:nth-child(12) {
+    transform: rotate(330deg);
+}
+
+.indicators div:nth-child(1):after {
+    content: '12';
+}
+
+.indicators div:nth-child(2):after {
+    content: '1';
+    transform: rotate(-30deg);
+}
+
+.indicators div:nth-child(3):after {
+    content: '2';
+    transform: rotate(-60deg);
+}
+
+.indicators div:nth-child(4):after {
+    content: '3';
+    transform: rotate(-90deg);
+}
+
+.indicators div:nth-child(5):after {
+    content: '4';
+    transform: rotate(-120deg);
+}
+
+.indicators div:nth-child(6):after {
+    content: '5';
+    transform: rotate(-150deg);
+}
+
+.indicators div:nth-child(7):after {
+    content: '6';
+    transform: rotate(-180deg);
+}
+
+.indicators div:nth-child(8):after {
+    content: '7';
+    transform: rotate(-210deg);
+}
+
+.indicators div:nth-child(9):after {
+    content: '8';
+    transform: rotate(-240deg);
+}
+
+.indicators div:nth-child(10):after {
+    content: '9';
+    transform: rotate(-270deg);
+}
+
+.indicators div:nth-child(11):after {
+    content: '10';
+    transform: rotate(-300deg);
+}
+
+.indicators div:nth-child(12):after {
+    content: '11';
+    transform: rotate(-330deg);
+}
+
+.hands {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hand {
+    border-radius: 10px;
+    background: #000;
+    position: absolute;
+    transform-origin: top;
+}
+
+.hour {
+    height: 100px;
+    width: 10px
+}
+
+.minute {
+    height: 120px;
+    width: 8px;
+}
+
+.second {
+    height: 140px;
+    width: 4px;
+    background: red;
+}
+
+.pin {
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px 0 #000;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    background: darkslategray;
+    z-index: 100;
+    position: absolute;
+    top: -10px;
+}
